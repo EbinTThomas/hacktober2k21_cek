@@ -84,16 +84,6 @@ a.nav__item__active {
     padding: 50px 0;
 }
 
-.img__banner {
-    max-width: 450px;
-    width: 50%;    
-}
-
-.college__name {
-    color: #fff;
-    font-weight: 600;
-}
-
 .section__content {
     padding: 50px 10vw;
 }
@@ -204,13 +194,5 @@ a.nav__item__active {
         position: absolute;
         right: 10vw;
         cursor: pointer;
-    }
-
-    .img__banner {
-        width: 50%;
-    }
-
-    .college__name {
-        font-size: 18px;
     }
 }
