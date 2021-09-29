@@ -87,6 +87,10 @@ a.nav__item__active {
     padding: 50px 10vw;
 }
 
+.section__head {
+    margin: 20px 0 30px 0;
+}
+
 .tech__communities {
     list-style-type: none;
     display: flex;
@@ -100,6 +104,7 @@ a.nav__item__active {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 10px 0;
 }
 
 .community__class {
@@ -157,12 +162,18 @@ a.nav__item__active {
     font-weight: 500;
 }
 
+.viewinfo__btn:hover {
+    background: #1A73E8;
+    color: #ffffff;
+}
+
 @media only screen and (max-width: 600px) {
     .nav__bar {
         top: 60px;
         left: 0;
         width: 100%;
         height: auto;
+        background: #fff;
     }
 
     .nav__bar ul {
@@ -176,11 +187,17 @@ a.nav__item__active {
         right: 10vw;
         cursor: pointer;
     }
-  }
-.nav__bar {
-    overflow: hidden;
-}
 
-#check:checked ~ .nav__bar {
-    display: none;
+    .section__banner {
+        height: 50vh;
+        min-height: 150px;
+    }
+
+    .img__banner {
+        width: 75%;
+    }
+
+    .college__name {
+        font-size: 18px;
+    }
 }
