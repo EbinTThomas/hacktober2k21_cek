@@ -1,4 +1,6 @@
-let openNavBtn=document.querySelector("#openNavBtn");
-let sidenav=document.querySelector(".navbar");
+let openNavBtn=document.querySelector(".open__nav__btn");
+let sidenav=document.querySelector(".nav__bar");
 
-checkbox
+function openNav() {
+    sidenav.classList.toggle('hide');
+}

@@ -25,6 +25,8 @@ body {
     position: relative;
     display: flex;
     align-items: center;
+    z-index: 2;
+    background: #fff;
 }
 
 h5.logo {
@@ -36,8 +38,12 @@ h5.logo {
 .nav__bar {
     height: 60px;
     position: absolute;
+    top: 0;
     right: 10vw;
+    overflow: hidden;
+    z-index: 2;
 }
+
 .nav__bar ul {
     width: 100%;
     height: 100%;
@@ -60,10 +66,14 @@ a.nav__item__active {
     color: #000;
 }
 
+.open__nav__btn {
+    display: none;
+}
+
 .section__banner {
     width: 100%;
-    min-height: 300px;
-    background: url('../img/banner.png'), rgba(0, 0, 0, 0.800);
+    aspect-ratio: 16/6;
+    background: url('../img/banner.png');
     background-blend-mode: multiply;
     background-size: cover;
     background-position: center;
@@ -75,7 +85,8 @@ a.nav__item__active {
 }
 
 .img__banner {
-    height: 250px;    
+    max-width: 450px;
+    width: 50%;    
 }
 
 .college__name {
@@ -167,13 +178,19 @@ a.nav__item__active {
     color: #ffffff;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     .nav__bar {
-        top: 60px;
+        position: relative;
         left: 0;
+        display: block;
         width: 100%;
         height: auto;
         background: #fff;
+        z-index: 1;
+    }
+
+    .nav__bar.hide {
+        height: 0;
     }
 
     .nav__bar ul {
@@ -183,18 +200,14 @@ a.nav__item__active {
     }
     
     .open__nav__btn {
+        display: block;
         position: absolute;
         right: 10vw;
         cursor: pointer;
     }
 
-    .section__banner {
-        height: 50vh;
-        min-height: 150px;
-    }
-
     .img__banner {
-        width: 75%;
+        width: 50%;
     }
 
     .college__name {
